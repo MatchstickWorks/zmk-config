@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 / {
     keymap {
@@ -7,7 +8,11 @@
 
         default_layer {
             bindings = <
-                &kp W &kp A &kp S &kp D &kp Z
+                &kp W 
+				&kp A 
+				&kp S 
+				&kp D 
+				&kp Z
             >;
         };
     };

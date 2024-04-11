@@ -1,0 +1,8 @@
+file_format: "1"
+id: stratapad
+name: StrataPad
+type: shield
+url: https://matchstick.works
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
