@@ -1,0 +1,9 @@
+if SHIELD_STRATAPAD
+
+config ZMK_KEYBOARD_NAME
+    default "stratapad macropad"
+
+config ZMK_USB
+    default y
+
+endif
