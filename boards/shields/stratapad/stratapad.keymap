@@ -8,11 +8,11 @@
 
         default_layer {
             bindings = <
-                &kp LCTRL 
+				&kp W 
 				&kp A 
 				&kp S 
 				&kp D 
-				&kp Z
+				&kp LCTRL
             >;
         };
     };
