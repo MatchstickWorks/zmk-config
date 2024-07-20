@@ -23,5 +23,5 @@ include:
     artifact-name: stratapad_wasd_keymap
   - board: seeeduino_xiao_ble
     shield: stratapad
-    cmake-args: -DKEYMAP_FILE=../../config/stratapad_arrows.keymap
+    cmake-args: -DKEYMAP_FILE=../boards/shields/stratapad/stratapad_arrows.keymap
     artifact-name: stratapad_arrows_keymap
