@@ -2,7 +2,21 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEFAULT 0
+#define BT_SET  1
+
+#define NONE 0
+
 / {
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&kp LCTRL>, <&kp LCTRL>, <&mo BT_SET>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -12,7 +26,16 @@
 				&kp LEFT 
 				&kp DOWN 
 				&kp RIGHT 
-				&kp LCTRL
+				&td0
+            >;
+        };
+	bt_cmds_layer {
+            bindings = <
+				&bt BT_CLR
+				&bt BT_SEL 0
+				&bt BT_SEL 1
+				&bt BT_SEL 2
+				&none
             >;
         };
     };
