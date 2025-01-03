@@ -33,7 +33,6 @@
             tapping-term-ms = <300>;
             bindings = <&kp W>, <&bt BT_CLR>;
         };
-
     };
 
     keymap {
