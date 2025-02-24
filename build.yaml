@@ -19,9 +19,16 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: stratapad rgbled_adapter
-    artifact-name: stratapad_wasd_keymap
+    shield: stratapad-v10 rgbled_adapter
+    artifact-name: stratapad-v1.0_wasd_keymap[default]
   - board: seeeduino_xiao_ble
-    shield: stratapad rgbled_adapter
-    cmake-args: -DKEYMAP_FILE=../../config/stratapad_arrows.keymap
-    artifact-name: stratapad_arrows_keymap
+    shield: stratapad-v10 rgbled_adapter
+    cmake-args: -DKEYMAP_FILE=../../config/stratapad_v10_arrows.keymap
+    artifact-name: stratapad-v1.0_arrows_keymap
+  - board: seeeduino_xiao_ble
+    shield: stratapad-v11 rgbled_adapter
+    artifact-name: stratapad-v1.1_wasd_keymap[default]
+  - board: seeeduino_xiao_ble
+    shield: stratapad-v11 rgbled_adapter
+    cmake-args: -DKEYMAP_FILE=../../config/stratapad_v11_arrows.keymap
+    artifact-name: stratapad-v1.1_arrows_keymap
