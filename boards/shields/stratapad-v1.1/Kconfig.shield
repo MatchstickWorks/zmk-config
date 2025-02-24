@@ -1,2 +1,0 @@
-config SHIELD_STRATAPAD-V1.1
-       def_bool $(shields_list_contains,stratapad-v1.1)

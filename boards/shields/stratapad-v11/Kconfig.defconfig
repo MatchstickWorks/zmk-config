@@ -1,7 +1,7 @@
-if SHIELD_STRATAPAD-V1.0
+if SHIELD_STRATAPAD-V11
 
 config ZMK_KEYBOARD_NAME
-    default "StrataPad-v1.0"
+    default "StrataPad-v1.1"
 
 config ZMK_USB
     default y
